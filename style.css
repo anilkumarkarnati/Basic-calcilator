@@ -1,0 +1,67 @@
+/* Body with a blue to pastel pink gradient background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #2F3C7E, #FBEAEB);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main calculator container */
+.calculator {
+  background-color: #ffffff; /* White background for calculator */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Display box styling */
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: right;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Grid layout for buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px); /* 4 columns */
+  gap: 10px; /* Space between buttons */
+}
+
+/* General button styling */
+button {
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e0e3eb; /* Light pastel tone */
+  color: #2F3C7E; /* Text color matches background theme */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #e9d6d7; /* Slightly darker pink on hover */
+}
+
+/* Special styling for "=" button */
+.equals {
+  background-color: #2F3C7E; /* Deep blue */
+  color: #ffffff; /* White text */
+}
+
+.equals:hover {
+  background-color: #243067; /* Darker shade on hover */
+}
